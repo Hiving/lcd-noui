@@ -30,7 +30,11 @@ void LcdMenu::printNextLine(char * str, bool center) {
 }
 
 void LcdMenu::moveDownMenu(){
-	if (selectedMenu == 1) {
-		/***/
-	}
+	_matrixLcd.moveCursor(selectedMenu, selectedMenu+1);
+	selectedMenu ++;
+}
+
+void LcdMenu::moveUpMenu(){
+	_matrixLcd.moveCursor(selectedMenu, selectedMenu-1);
+	selectedMenu --;
 }

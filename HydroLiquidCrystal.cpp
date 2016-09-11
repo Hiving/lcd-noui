@@ -16,5 +16,13 @@ HydroLiquidCrystal::HydroLiquidCrystal(){
 void HydroLiquidCrystal::moveDownMenu(){
 	if (selectedMenu == 1) {
 		_lcdMenuMain.moveDownMenu();
+		_lcdMenuMain.printMatrix(lcd);
+	}
+}
+
+void HydroLiquidCrystal::moveUpMenu(){
+	if (selectedMenu == 1) {
+		_lcdMenuMain.moveUpMenu();
+		_lcdMenuMain.printMatrix(lcd);
 	}
 }

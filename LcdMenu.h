@@ -1,7 +1,8 @@
 #ifndef LcdMenu_H
 #define LcdMenu_H
 
-#include "MatrixLcd.h"
+#include <LiquidCrystal.h>
+#include <MatrixLcd.h>
 
 class LcdMenu {
 public:
@@ -10,6 +11,7 @@ public:
     void printNextLine(char * str, bool center);
     void prepareDisplay();
     void moveDownMenu();
+    void moveUpMenu();
 private:
     MatrixLcd _matrixLcd;
     int cursorSelector = 0;

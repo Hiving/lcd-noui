@@ -2,7 +2,6 @@
 #define MatrixLcd_H
 
 #include <LiquidCrystal.h>
-#include <MatrixMath.h>
 
 class MatrixLcd {
 public:

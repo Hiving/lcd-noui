@@ -2,13 +2,13 @@
 #define HydroLiquidCrystal_H
 
 #include <Arduino.h>
-#include "MatrixLcd.h"
 #include "LcdMenu.h"
 
 class HydroLiquidCrystal {
 public:
     HydroLiquidCrystal();
     void moveDownMenu();
+    void moveUpMenu();
 private:
 	LcdMenu _lcdMenuMain;
 
